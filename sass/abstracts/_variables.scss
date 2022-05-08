@@ -1,0 +1,51 @@
+
+//breakpoint for responsive 
+//Media query manager
+/*
+0 - 600px: phone
+600 - 900px: tablet portrait
+900 - 1200px: tablet landscape
+1200 - 1800px: normal desktop screen
+1800 + : Big Desktop
+*/
+$breakpoints: (
+  'xsmall': (min-width: 12.5em), //200 px (phone)
+  'small': (min-width: 37.5em), //600 px (tablet portrait)
+  'medium': (min-width: 56.25em), //900 px  , 900/16 (tablet landscape)
+  'large': (min-width: 75em), // 1200 px, 1200/16 (normal desktop screen)
+  'huge': (min-width: 112.5em), //1800 px , 1800/16 ( Big Desktop)
+);
+
+
+//color
+$color-primary: #55c57a;
+$color-primary-dark: #28b485;
+$color-primary-light: #7ed56f;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-white: #fff;
+$color-black: #000;
+
+//font
+$default-font-size: 1.6rem;
+
+//grid
+$grid-width: 114rem;
+$grutter-horizontal: 6rem;
+$grutter-vertical: 7rem;
+
+// Responsive breakpoints
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px

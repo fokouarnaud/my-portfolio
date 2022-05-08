@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  grid-template-columns: [sidebar-start] 24rem [sidebar-end full-start] minmax(
+      2.4rem,
+      1fr
+    ) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(
+      2.4rem,
+      1fr
+    ) [full-end];
+
+
+  @include respond-to("xsmall") {
+    grid-template-columns: [ full-start] minmax(
+        0.4rem,
+        1fr
+      ) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, .8rem) [col-end]
+      ) [center-end] minmax(0.4rem, 1fr) [full-end];
+  
+        grid-template-rows: [sidebar-start-row] min-content [sidebar-end-row full-start-row] minmax(min-content, 14rem) [full-end-row];
+    }
+
+  @include respond-to("small") {
+    grid-template-columns: [sidebar-start] 24rem [sidebar-end full-start] minmax(
+        0.8rem,
+        1fr
+      ) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      ) [center-end] minmax(0.8rem, 1fr) [full-end];
+  
+        grid-template-rows: [sidebar-start-row] min-content [sidebar-end-row full-start-row] minmax(min-content, 14rem) [full-end-row];
+    }
+
+  @include respond-to("medium") {
+    grid-template-columns: [sidebar-start] 24rem [sidebar-end full-start] minmax(
+        2.4rem,
+        1fr
+      ) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      ) [center-end] minmax(2.4rem, 1fr) [full-end];
+  }
+}

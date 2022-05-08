@@ -1,0 +1,118 @@
+.home{
+    font-size: 2rem;
+}
+
+.welcome-section{
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @include respond-to("xsmall") {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 1.6rem;
+  }
+  @include respond-to("small") {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include respond-to("medium") {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+ 
+  padding: 10.6rem 2.4rem;
+  height: 100vh;
+  background-color: var(--color-primary);
+}
+
+.contact{
+  &-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include respond-to("xsmall") {
+      flex-direction: column; 
+     
+
+    }
+    @include respond-to("small") {
+      flex-direction: row; 
+      
+    }
+    padding: 6.4rem;
+    background-color: var(--color-primary);
+    &-header-title{
+      font-family: "Eczar", serif;
+      font-size: 6.4rem;
+      font-size: 600;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      color:var(--color-grey-light-1)
+    }
+
+  }
+  &-links{
+    width: 24rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  
+    a{
+      text-decoration: none;
+      color: var(--color-grey-dark-3);
+     
+      i{
+        display: inline-block;
+       font-size: 3.2rem;
+       
+       padding: 1.6rem;
+      }
+     
+    }
+  }
+  &-btn-details{
+    display: inline-block;
+    margin-top: 2.4rem;
+  }
+ 
+    
+}
+
+
+.projects-section{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10.6rem 2.4rem;
+ 
+  &-box{
+    padding: 1.6rem;
+   
+      display: flex;
+      flex-direction: column;
+  
+  }
+
+  background-color: var(--color-primary-dark);
+  &-header{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Eczar', serif;
+    color:var(--color-grey-light-1);
+    margin-bottom: 4.8rem;
+  }
+  
+}

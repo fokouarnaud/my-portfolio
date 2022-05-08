@@ -1,0 +1,8 @@
+.paragraph {
+  
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+
+    &:not(:last-of-type) {
+        margin-bottom: 1.6rem;
+    }
+}

@@ -1,0 +1,21 @@
+.code{
+    
+    
+  font-size: 1.8rem;
+    direction: ltr;
+    text-align: left;
+    white-space: pre-wrap;
+    word-spacing: normal;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 2rem 0;
+    tab-size: 2;
+    hyphens: none;
+    border-radius: 4px;
+    background-color: #1E1E1E;
+
+    &-content{
+        font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+        color: #aec1d3;
+    }
+}

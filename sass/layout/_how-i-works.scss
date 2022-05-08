@@ -1,0 +1,58 @@
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.8rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+ 
+  
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+    font-weight: 300;
+    
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: row;
+ 
+    @include respond-to("xsmall") {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    @include respond-to("medium") {
+      flex-direction: row;
+      justify-content: center;
+    }
+    margin-top: .8rem;
+    &-left {
+      width: 50rem;
+      padding: 1.6rem;
+      margin-right: 1.6rem;
+
+      &__text {
+        font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+        font-weight: 300;
+      }
+    }
+    &-right {
+      padding: 1.6rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      #video{
+        width: 100%;
+      }
+      
+    }
+  }
+}

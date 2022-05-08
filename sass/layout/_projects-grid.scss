@@ -1,0 +1,15 @@
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
+    gap: 3.2rem;
+    @include respond-to("xsmall") {
+        grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    }
+    @include respond-to("small") {
+        grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
+    }
+    
+    @include respond-to("medium") {
+        grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
+    }
+}

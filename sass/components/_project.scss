@@ -1,0 +1,90 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary-light);
+    border-radius: 2.4rem;
+   
+ 
+    
+    
+    &-img{
+       
+       
+        img{
+            height: 32rem;
+            width: 100%;
+            
+            border-radius: 2.4rem 2.4rem 0rem 0rem;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+    &-msge{
+       &-desc{
+        margin: 2.4rem;
+       }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        
+    }
+    &-title{
+        color: var(--color-grey-light-4);
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 150%;
+    }
+    &-details{
+       margin-top: .4rem;
+        color: var(--color-grey-dark-1);
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+
+    &-btn{
+        display: block;
+        text-decoration: none;
+       &--demo{
+        border-radius: 0rem 0rem 1.6rem 1.6rem;
+        max-width: 100%;
+        text-align: center;
+        margin: 2.4rem 0rem 0rem 0rem;
+        border: none;
+       }
+
+        max-width: 24rem;
+        padding: 2.4rem 4rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+      
+       
+        margin-top: 2.4rem;
+       
+        border-radius: 1.6rem;
+        border: .1rem solid var(--color-grey-light-5);
+        background-color: var(--color-grey-dark-2);
+        color: var(--color-grey-light-5);
+        cursor: pointer;
+        &--show-all{
+            align-self: center;
+            border:none;
+            border-radius: 1.6rem;
+            cursor: pointer;
+            background-color: transparent;
+            text-align: center;
+            i{
+              
+              margin-left: 1.2rem;
+              padding: .4rem;
+              border-radius: .4rem;
+              background-color: var(--color-grey-light-2);
+              color: var(--color-primary-dark);
+    
+            }
+        }
+    
+    }
+}
